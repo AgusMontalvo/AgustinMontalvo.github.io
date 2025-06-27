@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://unpkg.com https://cdnjs.cloudflare.com; media-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com;">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Detalle del Profesional - ChambaJob</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="img/logo.png" alt="Logo ChambaJob">
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">‹ Volver a la Búsqueda</a>
+        </nav>
+        <div class="user-nav">
+            <span>¡Bienvenido, Agustín!</span>
+            <a href="login.html" class="logout-button">Salir</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-container">
+            
+            <aside class="profile-sidebar">
+                <div class="profile-card">
+                    <div id="worker-photo-container">
+                        </div>
+                    <h2 id="worker-name-sidebar"></h2>
+                    <p id="worker-oficio-sidebar"></p>
+                    <div class="profile-rating" id="worker-rating-sidebar">
+                        </div>
+                    <button class="btn-contact-main">Contactar por Mensaje</button>
+                    <button class="btn-save-profile">Guardar Perfil</button>
+                </div>
+            </aside>
+
+            <section class="profile-main-content">
+                <h1 id="worker-name-main"></h1>
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="worker-city-main"></span>
+                </div>
+                
+                <div class="profile-section">
+                    <h3>Sobre Mí</h3>
+                    <p id="worker-description"></p>
+                </div>
+
+                <div class="profile-section">
+                    <h3>Opiniones de Clientes</h3>
+                    <div class="reviews-container" id="worker-reviews">
+                        <div class="review">
+                            <p class="review-text">"Un trabajo excelente, muy profesional y puntual. Lo recomiendo 100%."</p>
+                            <div class="review-author">- Cliente Satisfecho</div>
+                        </div>
+                        <div class="review">
+                            <p class="review-text">"Resolvió el problema rápidamente y de forma muy prolija."</p>
+                            <div class="review-author">- Otro Cliente</div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        </footer>
+
+    <script src="js/datos.js"></script>
+    <script src="js/detalle.js"></script> 
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/theme.js"></script> <script src="js/app.js"></script>
+    </body>
+    
+</html>
